@@ -4,6 +4,6 @@
     align-items: center;
     gap: 5%;
 
-    background: linear-gradient(45deg,rgb(11, 120, 40),rgb(36, 154, 112)) ;
+    background: linear-gradient(135deg, rgb(36, 154, 112)10%, rgb(36, 50, 70)90%) ;
     color:white;
 }

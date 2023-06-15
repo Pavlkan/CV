@@ -1,3 +1,5 @@
+import { Box } from "@mui/material";
+
 import AboutMyself from "../components/about-myself/AboutMyself";
 import Education from "../components/education/Education";
 import Languages from "../components/languages/Languages";
@@ -17,9 +19,11 @@ const CVPage = () => {
 
             <main>
                 <AboutMyself />
-                <Skills />
-                <Languages />
-                <Education />
+                <Box className={styles.mainInfoContainer}>
+                    <Skills />
+                    <Languages />
+                    <Education />
+                </Box>
             </main>
 
             <footer>footer</footer>

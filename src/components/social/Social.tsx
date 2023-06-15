@@ -1,6 +1,6 @@
 import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
 
-import socialInfo from "../../data/social-info";
+import { socialInfo } from "../../data/CVInfo";
 import styles from "./social.module.css";
 
 const Social = () => {
