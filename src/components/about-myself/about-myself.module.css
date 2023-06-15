@@ -1,0 +1,9 @@
+.aboutMyselfContainer {
+    padding: 2% 5%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+
+    background: linear-gradient(45deg,rgb(11, 120, 40),rgb(36, 154, 112)) ;
+    color:white;
+}

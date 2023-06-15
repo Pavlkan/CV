@@ -1,11 +1,16 @@
 import EmailIcon from "@mui/icons-material/Email";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import PhoneEnabledRoundedIcon from "@mui/icons-material/PhoneEnabledRounded";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const socialInfo = [
     {
         social: "karmanpavel.pavlkan@gmail.com",
         icon: <EmailIcon />,
+    },
+    {
+        social: "linkedin.com/in/pavel-karman-8a367b271",
+        icon: <LinkedInIcon />,
     },
     {
         social: "@Pavlkan",
