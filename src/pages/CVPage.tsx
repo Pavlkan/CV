@@ -5,20 +5,22 @@ import Skills from "../components/skills/Skills";
 import Social from "../components/social/Social";
 import Title from "../components/title/Title";
 
+import styles from "./cv-page.module.css";
+
 const CVPage = () => {
     return (
         <>
-            <header>
+            <header className={styles.header}>
                 <Title />
                 <Social />
             </header>
 
-            <body>
+            <main>
                 <AboutMyself />
                 <Skills />
                 <Languages />
                 <Education />
-            </body>
+            </main>
 
             <footer>footer</footer>
         </>
