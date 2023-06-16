@@ -3,7 +3,7 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 import PhoneEnabledRoundedIcon from "@mui/icons-material/PhoneEnabledRounded";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-const socialInfo = [
+export const socialInfo = [
     {
         social: "karmanpavel.pavlkan@gmail.com",
         icon: <EmailIcon />,
@@ -22,12 +22,12 @@ const socialInfo = [
     },
 ];
 
-const aboutMyselfInfo = `Start programming in 2020. Graduated from the Rolling Scopes School frontend course and have
+export const aboutMyselfInfo = `Start programming in 2020. Graduated from the Rolling Scopes School frontend course and have
 experience in project management. In the work process I always try to do my best to delve into task,
 to optimize it and deepen my knowledge. As for my hobbies I am fond of listening to music as well as
 playing it, watching movies, doing sports and reading fiction from fantasy to classic.`;
 
-const skills = [
+export const skills = [
     {
         tech: "HTML/CSS",
         projects: new Map([
@@ -59,9 +59,7 @@ const skills = [
     },
 ];
 
-const localServers = new Map([
+export const localServers = new Map([
     ["Async race", "https://github.com/mikhama/async-race-api"],
     ["Gartic phone clone", "https://drive.google.com/file/d/1pVV1LYw5xlQVhep9IH3RrHMfpstYEy8Y/view?usp=drive_link"],
 ]);
-
-export { socialInfo, aboutMyselfInfo, skills, localServers };

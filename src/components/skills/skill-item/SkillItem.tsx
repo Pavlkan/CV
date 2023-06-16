@@ -1,7 +1,6 @@
 import React from "react";
 
 import { List, ListItemButton, ListItemText, Collapse, Typography } from "@mui/material";
-
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 
@@ -14,7 +13,7 @@ interface SkillItemProps {
 export const SkillItem = ({ skill }: SkillItemProps) => {
     const [open, setOpen] = React.useState(false);
 
-    const handleCollapseClick = () => {
+    const handleOpenClick = () => {
         setOpen(!open);
     };
 
@@ -24,10 +23,11 @@ export const SkillItem = ({ skill }: SkillItemProps) => {
 
     return (
         <>
-            <ListItemButton onClick={handleCollapseClick}>
+            <ListItemButton onClick={handleOpenClick}>
                 <ListItemText primary={<Typography fontSize={18}>{skill.tech}</Typography>} />
                 {open ? <ExpandLess /> : <ExpandMore />}
             </ListItemButton>
+            
             <Collapse in={open} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                     {Array.from(skill.projects).map((project, key) => {

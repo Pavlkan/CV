@@ -1,5 +1,5 @@
-const Languages = () => {
-    return <div>Languages</div>;
-};
+import { Box } from "@mui/material";
 
-export default Languages;
+export const Languages = () => {
+    return <Box>Typogra</Box>;
+};

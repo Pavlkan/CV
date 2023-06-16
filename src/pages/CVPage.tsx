@@ -1,19 +1,19 @@
 import { Box } from "@mui/material";
 
-import AboutMyself from "../components/about-myself/AboutMyself";
-import Education from "../components/education/Education";
-import Languages from "../components/languages/Languages";
-import Skills from "../components/skills/Skills";
-import Social from "../components/social/Social";
-import Title from "../components/title/Title";
+import { AboutMyself } from "../components/about-myself/AboutMyself";
+import { Education } from "../components/education/Education";
+import { Languages } from "../components/languages/Languages";
+import { Skills } from "../components/skills/Skills";
+import { Social } from "../components/social/Social";
 
+import { MainTitle } from "../components/title/MainTitle";
 import styles from "./cv-page.module.css";
 
 const CVPage = () => {
     return (
         <>
             <header className={styles.header}>
-                <Title />
+                <MainTitle />
                 <Social />
             </header>
 

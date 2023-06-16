@@ -1,15 +1,16 @@
-import { Box, Typography, Divider, List } from "@mui/material";
+import { Box, Divider, List } from "@mui/material";
 
 import { skills } from "../../data/CVInfo";
 import { SkillItem } from "./skill-item/SkillItem";
+import { Title } from "../shared/Title";
 
-const Skills = () => {
+export const Skills = () => {
     return (
         <Box mb="2%">
-            <Typography fontSize={30} fontWeight="bold" className="title" component="h2">
-                Skills
-            </Typography>
+            <Title title="Skills"></Title>
+
             <Divider />
+
             <List style={{ width: "40%" }}>
                 {skills.map((skill, key) => {
                     return <SkillItem key={key} skill={skill} />;
@@ -18,5 +19,3 @@ const Skills = () => {
         </Box>
     );
 };
-
-export default Skills;

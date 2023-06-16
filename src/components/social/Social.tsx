@@ -3,7 +3,7 @@ import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from 
 import { socialInfo } from "../../data/CVInfo";
 import styles from "./social.module.css";
 
-const Social = () => {
+export const Social = () => {
     return (
         <Box className={styles.socialContainer}>
             <List>
@@ -12,6 +12,7 @@ const Social = () => {
                         <ListItem disablePadding key={key}>
                             <ListItemButton>
                                 <ListItemIcon>{socialItem.icon}</ListItemIcon>
+
                                 <ListItemText primary={socialItem.social} />
                             </ListItemButton>
                         </ListItem>
@@ -21,5 +22,3 @@ const Social = () => {
         </Box>
     );
 };
-
-export default Social;
