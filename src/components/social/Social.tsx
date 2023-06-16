@@ -6,7 +6,7 @@ import styles from "./social.module.css";
 export const Social = () => {
     return (
         <Box className={styles.socialContainer}>
-            <List>
+            <List style={{ padding: 0 }}>
                 {socialInfo.map((socialItem, key) => {
                     return (
                         <ListItem disablePadding key={key}>

@@ -56,6 +56,15 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
   box-shadow: 0px 0px 10px rgb(130, 130, 130);
 }
 
+header {
+  background: linear-gradient(125deg,rgb(252, 252, 252), rgb(234, 255, 240),rgb(234, 255, 245), rgb(214, 244, 244));
+
+}
+
+main {
+  background: linear-gradient(75deg,rgb(252, 252, 252), rgb(234, 255, 240),rgb(234, 255, 245), rgb(214, 244, 244));
+}
+
 .title {
   background: linear-gradient(45deg,  rgb(36, 50, 70)60%, rgb(36, 154, 112)10%, #5100a3);
   background-clip: text;

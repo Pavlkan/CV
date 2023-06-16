@@ -13,7 +13,7 @@ export const socialInfo = [
         icon: <LinkedInIcon />,
     },
     {
-        social: "@Pavlkan",
+        social: "https://t.me/Pavlkan",
         icon: <TelegramIcon />,
     },
     {
@@ -63,3 +63,14 @@ export const localServers = new Map([
     ["Async race", "https://github.com/mikhama/async-race-api"],
     ["Gartic phone clone", "https://drive.google.com/file/d/1pVV1LYw5xlQVhep9IH3RrHMfpstYEy8Y/view?usp=drive_link"],
 ]);
+
+export const languages = [
+    {
+        language: "Russian",
+        level: "Native speaker",
+    },
+    {
+        language: "English",
+        level: "Upper-intermediate/Advanced, experience in speaking with native and advanced speakers, reading books in the original and constantly improving my knowledge",
+    },
+];
