@@ -12,7 +12,7 @@ const AboutMyself = () => {
                 alt="Karman Pavel"
             />
             <Box>
-                <Typography fontSize={30} component="h2">
+                <Typography fontSize={30} fontWeight="bold" className="title_about" component="h2">
                     ABOUT MYSELF
                 </Typography>
                 <Divider sx={{ background: "white" }} />

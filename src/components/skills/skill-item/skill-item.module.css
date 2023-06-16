@@ -1,0 +1,7 @@
+.link {
+  background: linear-gradient(45deg, rgb(76, 0, 138) 33%, #0D61BC 66%, #5100a3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+}
