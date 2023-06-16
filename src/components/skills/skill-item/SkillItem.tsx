@@ -1,13 +1,13 @@
 import React from "react";
 
-import { List, ListItemButton, ListItemText, Collapse, Typography } from "@mui/material";
+import { Box, List, ListItemButton, Rating, ListItemText, Collapse, Typography } from "@mui/material";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 
 import styles from "./skill-item.module.css";
 
 interface SkillItemProps {
-    skill: { tech: string; projects: Map<string, string> };
+    skill: { tech: string; level: number; projects: Map<string, string> };
 }
 
 export const SkillItem = ({ skill }: SkillItemProps) => {
@@ -22,12 +22,16 @@ export const SkillItem = ({ skill }: SkillItemProps) => {
     };
 
     return (
-        <>
-            <ListItemButton onClick={handleOpenClick}>
-                <ListItemText primary={<Typography fontSize={18}>{skill.tech}</Typography>} />
-                {open ? <ExpandLess /> : <ExpandMore />}
-            </ListItemButton>
-            
+        <Box>
+            <Box className={styles.titleContainer}>
+                <ListItemButton onClick={handleOpenClick}>
+                    <ListItemText primary={<Typography fontSize={18}>{skill.tech}</Typography>} />
+                    {open ? <ExpandLess /> : <ExpandMore />}
+                </ListItemButton>
+
+                <Rating sx={{ color: "rgb(36, 154, 112)" }} value={skill.level} precision={0.5} size="large" readOnly />
+            </Box>
+
             <Collapse in={open} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                     {Array.from(skill.projects).map((project, key) => {
@@ -39,6 +43,6 @@ export const SkillItem = ({ skill }: SkillItemProps) => {
                     })}
                 </List>
             </Collapse>
-        </>
+        </Box>
     );
 };

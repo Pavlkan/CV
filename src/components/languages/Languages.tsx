@@ -6,12 +6,12 @@ import { LanguageItem } from "./language-item/LanguageItem";
 
 export const Languages = () => {
     return (
-        <Box>
+        <Box mb="2%">
             <Title title="Languages" />
 
             <Divider />
 
-            <List>
+            <List style={{ width: "89%" }}>
                 {languages.map((languageInfo, key) => {
                     return <LanguageItem key={key} languageInfo={languageInfo} />;
                 })}

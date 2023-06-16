@@ -1,3 +1,9 @@
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
 .link {
   background: linear-gradient(45deg, rgb(76, 0, 138) 33%, #0D61BC 66%, #5100a3);
   background-clip: text;

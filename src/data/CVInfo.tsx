@@ -30,6 +30,7 @@ playing it, watching movies, doing sports and reading fiction from fantasy to cl
 export const skills = [
     {
         tech: "HTML/CSS",
+        level: 4,
         projects: new Map([
             ["Portfolio", "https://rolling-scopes-school.github.io/pavlkan-JSFEPRESCHOOL/portfolio/"],
             ["Shelter", "https://rolling-scopes-school.github.io/pavlkan-JSFE2022Q1/shelter/pages/main/index.html"],
@@ -39,6 +40,7 @@ export const skills = [
     },
     {
         tech: "JS/TS",
+        level: 3,
         projects: new Map([
             ["CodeWars 4kyu", "https://www.codewars.com/users/rsschool_0b065bd1014e96bf"],
             ["Virtual keyboard", "https://rolling-scopes-school.github.io/pavlkan-JSFE2022Q1/RSS-Virtual-Keyboard/"],
@@ -51,10 +53,12 @@ export const skills = [
     },
     {
         tech: "React",
+        level: 2.5,
         projects: new Map([["Gartic phone clone", "https://cute-stroopwafel-d072f2.netlify.app/landing"]]),
     },
     {
         tech: "Angular",
+        level: 2,
         projects: new Map([["Video hosting", "https://648b66bb7bbf3c00c05c5cc1--glittering-pixie-633ae1.netlify.app"]]),
     },
 ];

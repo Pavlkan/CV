@@ -11,7 +11,7 @@ export const Skills = () => {
 
             <Divider />
 
-            <List style={{ width: "40%" }}>
+            <List style={{ width: "85%" }}>
                 {skills.map((skill, key) => {
                     return <SkillItem key={key} skill={skill} />;
                 })}
