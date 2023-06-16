@@ -27,7 +27,7 @@ experience in project management. In the work process I always try to do my best
 to optimize it and deepen my knowledge. As for my hobbies I am fond of listening to music as well as
 playing it, watching movies, doing sports and reading fiction from fantasy to classic.`;
 
-export const skills = [
+export const skillsInfo = [
     {
         tech: "HTML/CSS",
         level: 4,
@@ -68,7 +68,7 @@ export const localServers = new Map([
     ["Gartic phone clone", "https://drive.google.com/file/d/1pVV1LYw5xlQVhep9IH3RrHMfpstYEy8Y/view?usp=drive_link"],
 ]);
 
-export const languages = [
+export const languagesInfo = [
     {
         language: "Russian",
         level: "Native speaker",
@@ -76,5 +76,18 @@ export const languages = [
     {
         language: "English",
         level: "Upper-intermediate/Advanced, experience in speaking with native and advanced speakers, reading books in the original and constantly improving my knowledge",
+    },
+];
+
+export const educationInfo = [
+    {
+        education: "Pharmacist",
+        explanation: "Graduated from Mogilev State Medical College in 2018",
+        link: null,
+    },
+    {
+        education: "Frontend developer",
+        explanation: "Graduated from the Rolling Scopes School frontend course in 2023",
+        link: "https://app.rs.school/certificate/e9yng957",
     },
 ];

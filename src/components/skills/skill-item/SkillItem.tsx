@@ -7,10 +7,10 @@ import ExpandMore from "@mui/icons-material/ExpandMore";
 import styles from "./skill-item.module.css";
 
 interface SkillItemProps {
-    skill: { tech: string; level: number; projects: Map<string, string> };
+    skillItem: { tech: string; level: number; projects: Map<string, string> };
 }
 
-export const SkillItem = ({ skill }: SkillItemProps) => {
+export const SkillItem = ({ skillItem }: SkillItemProps) => {
     const [open, setOpen] = React.useState(false);
 
     const handleOpenClick = () => {
@@ -25,16 +25,16 @@ export const SkillItem = ({ skill }: SkillItemProps) => {
         <Box>
             <Box className={styles.titleContainer}>
                 <ListItemButton onClick={handleOpenClick}>
-                    <ListItemText primary={<Typography fontSize={18}>{skill.tech}</Typography>} />
+                    <ListItemText primary={<Typography fontSize={18}>{skillItem.tech}</Typography>} />
                     {open ? <ExpandLess /> : <ExpandMore />}
                 </ListItemButton>
 
-                <Rating sx={{ color: "rgb(36, 154, 112)" }} value={skill.level} precision={0.5} size="large" readOnly />
+                <Rating sx={{ color: "rgb(36, 154, 112)" }} value={skillItem.level} precision={0.5} size="large" readOnly />
             </Box>
 
             <Collapse in={open} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                    {Array.from(skill.projects).map((project, key) => {
+                    {Array.from(skillItem.projects).map((project, key) => {
                         return (
                             <ListItemButton onClick={() => handleLinkClick(project[1])} key={key} sx={{ pl: 4 }}>
                                 <ListItemText primary={<Typography className={styles.link}>{project[0]}</Typography>} />

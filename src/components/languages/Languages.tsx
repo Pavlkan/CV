@@ -1,7 +1,7 @@
 import { Box, Divider, List } from "@mui/material";
 
 import { Title } from "../shared/Title";
-import { languages } from "../../data/CVInfo";
+import { languagesInfo } from "../../data/CVInfo";
 import { LanguageItem } from "./language-item/LanguageItem";
 
 export const Languages = () => {
@@ -12,8 +12,8 @@ export const Languages = () => {
             <Divider />
 
             <List style={{ width: "89%" }}>
-                {languages.map((languageInfo, key) => {
-                    return <LanguageItem key={key} languageInfo={languageInfo} />;
+                {languagesInfo.map((languageItem, key) => {
+                    return <LanguageItem key={key} languageItem={languageItem} />;
                 })}
             </List>
         </Box>

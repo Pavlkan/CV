@@ -1,23 +1,21 @@
 import { ListItem, ListItemIcon, Box, ListItemText, Typography } from "@mui/material";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 
-import styles from "./language-item.module.css";
-
 interface LanguageItemProps {
-    languageInfo: { language: string; level: string };
+    languageItem: { language: string; level: string };
 }
 
-export const LanguageItem = ({ languageInfo }: LanguageItemProps) => {
+export const LanguageItem = ({ languageItem }: LanguageItemProps) => {
     return (
         <ListItem>
             <ListItemIcon>
-                <FiberManualRecordIcon className={styles.dotIcon} />
+                <FiberManualRecordIcon className="dotIcon" />
             </ListItemIcon>
 
             <Box>
-                <ListItemText primary={<Typography fontSize={18}>{languageInfo.language}</Typography>} />
+                <ListItemText primary={<Typography fontSize={18}>{languageItem.language}</Typography>} />
 
-                <ListItemText primary={<Typography className={styles.subtitle}>{languageInfo.level}</Typography>} />
+                <ListItemText primary={<Typography color="gray">{languageItem.level}</Typography>} />
             </Box>
         </ListItem>
     );

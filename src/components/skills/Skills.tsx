@@ -1,6 +1,6 @@
 import { Box, Divider, List } from "@mui/material";
 
-import { skills } from "../../data/CVInfo";
+import { skillsInfo } from "../../data/CVInfo";
 import { SkillItem } from "./skill-item/SkillItem";
 import { Title } from "../shared/Title";
 
@@ -12,8 +12,8 @@ export const Skills = () => {
             <Divider />
 
             <List style={{ width: "85%" }}>
-                {skills.map((skill, key) => {
-                    return <SkillItem key={key} skill={skill} />;
+                {skillsInfo.map((skillItem, key) => {
+                    return <SkillItem key={key} skillItem={skillItem} />;
                 })}
             </List>
         </Box>

@@ -80,3 +80,8 @@ main {
   color: #0B2349;
   display: table;
 }
+
+.dotIcon {
+  font-size: large;
+  color: black;
+}
