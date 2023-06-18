@@ -1,15 +1,26 @@
 import { useState, useCallback } from "react";
 
-import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Snackbar } from "@mui/material";
+import {
+    Box,
+    List,
+    ListItem,
+    ListItemButton,
+    ListItemIcon,
+    ListItemText,
+    Snackbar,
+    useMediaQuery,
+} from "@mui/material";
 
 import styles from "./social.module.css";
 
 interface SocialPropsInterface {
     social: string;
+    link: string;
     icon: JSX.Element;
 }
 
 export const Social = ({ socialInfo }: { socialInfo: SocialPropsInterface[] }) => {
+    const matchesTablet = useMediaQuery("(max-width:768px)");
     const [shown, setShown] = useState(false);
 
     const onSnackbarClose = useCallback(() => setShown(false), [setShown]);
@@ -24,12 +35,19 @@ export const Social = ({ socialInfo }: { socialInfo: SocialPropsInterface[] }) =
 
     return (
         <Box className={styles.socialContainer}>
-            <List style={{ padding: 0 }}>
+            <List className={styles.list} style={{ padding: 0, width: "100%" }}>
                 {socialInfo.map((socialItem, key) => {
                     return (
-                        <ListItem disablePadding key={key}>
-                            <ListItemButton onClick={() => onInviteClick(socialItem.social)}>
-                                <ListItemIcon>{socialItem.icon}</ListItemIcon>
+                        <ListItem
+                            sx={{ width: matchesTablet ? "25%" : "100%" }}
+                            className={styles.listItem}
+                            disablePadding
+                            key={key}
+                        >
+                            <ListItemButton onClick={() => onInviteClick(socialItem.link)}>
+                                <ListItemIcon sx={{ minWidth: matchesTablet ? 0 : "56px" }}>
+                                    {socialItem.icon}
+                                </ListItemIcon>
 
                                 <ListItemText primary={socialItem.social} />
                             </ListItemButton>

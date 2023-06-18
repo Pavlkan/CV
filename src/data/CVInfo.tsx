@@ -6,19 +6,23 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 export const socialInfo = [
     {
-        social: "karmanpavel.pavlkan@gmail.com",
+        social: "Email",
+        link: "karmanpavel.pavlkan@gmail.com",
         icon: <EmailIcon />,
     },
     {
-        social: "linkedin.com/in/pavel-karman-8a367b271",
+        social: "LinkedIn",
+        link: "linkedin.com/in/pavel-karman-8a367b271",
         icon: <LinkedInIcon />,
     },
     {
-        social: "https://t.me/Pavlkan",
+        social: "Telegram",
+        link: "https://t.me/Pavlkan",
         icon: <TelegramIcon />,
     },
     {
-        social: "8 033 609-58-67",
+        social: "Phone",
+        link: "8 033 609-58-67",
         icon: <PhoneEnabledRoundedIcon />,
     },
 ];
@@ -103,23 +107,28 @@ export const educationInfo = [
 
 export const socialInfoFooter = [
     {
-        social: "karmanpavel.pavlkan@gmail.com",
+        social: "Email",
+        link: "karmanpavel.pavlkan@gmail.com",
         icon: <EmailIcon sx={{ fill: "lightcyan" }} />,
     },
     {
-        social: "linkedin.com/in/pavel-karman-8a367b271",
+        social: "LinkedIn",
+        link: "linkedin.com/in/pavel-karman-8a367b271",
         icon: <LinkedInIcon sx={{ fill: "lightcyan" }} />,
     },
     {
-        social: "https://github.com/Pavlkan",
+        social: "GitHub",
+        link: "https://github.com/Pavlkan",
         icon: <GitHubIcon sx={{ fill: "lightcyan" }} />,
     },
     {
-        social: "https://t.me/Pavlkan",
+        social: "Telegram",
+        link: "https://t.me/Pavlkan",
         icon: <TelegramIcon sx={{ fill: "lightcyan" }} />,
     },
     {
-        social: "8 033 609-58-67",
+        social: "Phone",
+        link: "8 033 609-58-67",
         icon: <PhoneEnabledRoundedIcon sx={{ fill: "lightcyan" }} />,
     },
 ];

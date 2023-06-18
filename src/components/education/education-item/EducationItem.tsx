@@ -1,4 +1,4 @@
-import { ListItem, ListItemIcon, Box, ListItemText, Typography, ListItemButton } from "@mui/material";
+import { ListItem, ListItemIcon, Box, ListItemText, Typography, ListItemButton, useMediaQuery } from "@mui/material";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 
 import styles from "./education-item.module.css";
@@ -8,13 +8,18 @@ interface EducationItemProps {
 }
 
 export const EducationItem = ({ educationItem }: EducationItemProps) => {
+    const matchesTablet = useMediaQuery("(max-width:1024px)");
+
     const handleLinkClick = (link: string | null) => {
         if (!link) return;
         window.open(link);
     };
 
     return (
-        <ListItem className={styles.rsEducationItem}>
+        <ListItem
+            className={educationItem.link ? styles.rsEducationItem : styles.educationItem}
+            sx={{ alignItems: matchesTablet ? "start" : "center" }}
+        >
             <Box className={styles.item}>
                 <ListItemIcon>
                     <FiberManualRecordIcon className="dotIcon" />

@@ -64,9 +64,21 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
   box-shadow: 0px 0px 10px rgb(130, 130, 130);
 }
 
+@media (max-width: 1024px) {
+  .cv-page-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cv-page-wrapper {
+    width: 96%;
+  }
+}
+
 header {
   background: linear-gradient(125deg,rgb(252, 252, 252), rgb(234, 255, 240),rgb(234, 255, 245), rgb(214, 244, 244));
-
+  
 }
 
 main {
@@ -87,6 +99,12 @@ main {
   -webkit-text-fill-color: transparent;
   color: #0B2349;
   display: table;
+}
+
+@media (max-width: 768px) {
+  .title, .title_about {
+    margin: 0 auto;
+  }
 }
 
 .dotIcon {

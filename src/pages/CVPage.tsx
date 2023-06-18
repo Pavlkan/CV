@@ -1,4 +1,4 @@
-import { Box, List, ListItem, ListItemButton, ListItemIcon } from "@mui/material";
+import { Box } from "@mui/material";
 
 import { AboutMyself } from "../components/about-myself/AboutMyself";
 import { Education } from "../components/education/Education";

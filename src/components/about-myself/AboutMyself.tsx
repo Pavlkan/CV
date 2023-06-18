@@ -1,13 +1,18 @@
-import { Box, Avatar, Typography, Divider } from "@mui/material";
+import { Box, Avatar, Typography, Divider, useMediaQuery } from "@mui/material";
 
 import { aboutMyselfInfo } from "../../data/CVInfo";
 import styles from "./about-myself.module.css";
 
 export const AboutMyself = () => {
+    const matchesTablet = useMediaQuery("(max-width:768px)");
+
     return (
         <Box className={styles.aboutMyselfContainer}>
             <Avatar
-                sx={{ width: "15vw", height: "15vw" }}
+                sx={{
+                    width: matchesTablet ? "40vw" : "15vw",
+                    height: matchesTablet ? "40vw" : "15vw",
+                }}
                 src={`${process.env.PUBLIC_URL}/avatar.jpg`}
                 alt="Karman Pavel"
             />

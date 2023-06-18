@@ -7,3 +7,11 @@
     background: linear-gradient(135deg, rgb(36, 154, 112)10%, rgb(36, 50, 70)90%) ;
     color:white;
 }
+
+@media (max-width: 768px) {
+    .aboutMyselfContainer {
+        padding: 2% 2%;
+        flex-direction: column;
+        gap: 5px;
+    }
+  }

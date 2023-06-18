@@ -5,8 +5,21 @@
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    .header {
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+}
+
 .mainInfoContainer {
     padding: 2% 5%;
+}
+
+@media (max-width: 768px) {
+    .mainInfoContainer {
+        padding: 2% 2%;
+    }
 }
 
 footer {
@@ -15,4 +28,10 @@ footer {
 
     background: linear-gradient(135deg, rgb(15, 99, 70)10%, rgb(36, 50, 70)90%) ;
     color:lightcyan;
+}
+
+@media (max-width: 768px) {
+    footer {
+        justify-content: center;
+    }
 }
