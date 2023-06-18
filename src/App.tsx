@@ -1,11 +1,13 @@
+import { Box } from "@mui/material";
+
 import "./App.css";
 import CVPage from "./pages/CVPage";
 
 function App() {
     return (
-        <div className="cv-page-wrapper">
+        <Box className="cv-page-wrapper">
             <CVPage />
-        </div>
+        </Box>
     );
 }
 

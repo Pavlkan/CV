@@ -1,7 +1,7 @@
 .titleContainer {
   display: flex;
   align-items: center;
-  gap: 10%;
+  gap: 20%;
 }
 
 .link {
@@ -10,4 +10,8 @@
   -webkit-text-fill-color: transparent;
   color: #0B2349;
   display: table;
+}
+
+.link:hover {
+  text-decoration: underline;
 }

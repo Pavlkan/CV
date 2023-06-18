@@ -12,14 +12,13 @@
 
 .link {
     margin: 0 auto;
-    font-size: 1.3em;
-    background: linear-gradient(135deg, #12BCB0 20%, #42d22f 70%);
+    background: linear-gradient(135deg, #05aea3 20%, #238516 70%, #006861);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
     padding: 0.3em 0.6em ;
     border: 3px solid transparent;
-    border-image: linear-gradient(135deg, #12BCB0 20%, #57c418 70%);
+    border-image: linear-gradient(135deg, #01a69b 20%, #2f700a 70%, #006d64);
     border-image-slice: 1;
 }
 

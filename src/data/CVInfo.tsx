@@ -2,6 +2,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import PhoneEnabledRoundedIcon from "@mui/icons-material/PhoneEnabledRounded";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 export const socialInfo = [
     {
@@ -48,13 +49,18 @@ export const skillsInfo = [
             ["Quiz about birds", "https://rolling-scopes-school.github.io/pavlkan-JSFE2022Q3/songbird/src/"],
             ["Online-shop (team project)", "https://keen-tiramisu-717bec.netlify.app/catalog"],
             ["KISS principle presentation", "https://beamish-dieffenbachia-5a803f.netlify.app"],
-            ["Async race", "https://friendly-buttercream-6d340e.netlify.app/garage"],
+            ["Async race (works only with local server)", "https://friendly-buttercream-6d340e.netlify.app/garage"],
         ]),
     },
     {
         tech: "React",
         level: 2.5,
-        projects: new Map([["Gartic phone clone", "https://cute-stroopwafel-d072f2.netlify.app/landing"]]),
+        projects: new Map([
+            [
+                "Gartic phone clone (team project and works only with local server)",
+                "https://cute-stroopwafel-d072f2.netlify.app/landing",
+            ],
+        ]),
     },
     {
         tech: "Angular",
@@ -63,9 +69,12 @@ export const skillsInfo = [
     },
 ];
 
-export const localServers = new Map([
-    ["Async race", "https://github.com/mikhama/async-race-api"],
-    ["Gartic phone clone", "https://drive.google.com/file/d/1pVV1LYw5xlQVhep9IH3RrHMfpstYEy8Y/view?usp=drive_link"],
+export const localServersInfo = new Map([
+    ["Async race (works only with local server)", "https://github.com/mikhama/async-race-api"],
+    [
+        "Gartic phone clone (team project and works only with local server)",
+        "https://drive.google.com/file/d/1pVV1LYw5xlQVhep9IH3RrHMfpstYEy8Y/view?usp=drive_link",
+    ],
 ]);
 
 export const languagesInfo = [
@@ -89,5 +98,28 @@ export const educationInfo = [
         education: "Frontend developer",
         explanation: "Graduated from the Rolling Scopes School frontend course in 2023",
         link: "https://app.rs.school/certificate/e9yng957",
+    },
+];
+
+export const socialInfoFooter = [
+    {
+        social: "karmanpavel.pavlkan@gmail.com",
+        icon: <EmailIcon sx={{ fill: "lightcyan" }} />,
+    },
+    {
+        social: "linkedin.com/in/pavel-karman-8a367b271",
+        icon: <LinkedInIcon sx={{ fill: "lightcyan" }} />,
+    },
+    {
+        social: "https://github.com/Pavlkan",
+        icon: <GitHubIcon sx={{ fill: "lightcyan" }} />,
+    },
+    {
+        social: "https://t.me/Pavlkan",
+        icon: <TelegramIcon sx={{ fill: "lightcyan" }} />,
+    },
+    {
+        social: "8 033 609-58-67",
+        icon: <PhoneEnabledRoundedIcon sx={{ fill: "lightcyan" }} />,
     },
 ];

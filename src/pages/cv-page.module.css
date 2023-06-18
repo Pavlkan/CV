@@ -8,3 +8,11 @@
 .mainInfoContainer {
     padding: 2% 5%;
 }
+
+footer {
+    display: flex;
+    justify-content: end;
+
+    background: linear-gradient(135deg, rgb(15, 99, 70)10%, rgb(36, 50, 70)90%) ;
+    color:lightcyan;
+}

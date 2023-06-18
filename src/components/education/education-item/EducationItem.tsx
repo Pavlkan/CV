@@ -32,7 +32,7 @@ export const EducationItem = ({ educationItem }: EducationItemProps) => {
                 >
                     <ListItemText
                         primary={
-                            <Typography className={styles.link} color="gray">
+                            <Typography className={styles.link} fontWeight="bold" fontSize={18}>
                                 CERTIFICATE
                             </Typography>
                         }

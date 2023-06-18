@@ -11,7 +11,7 @@ export const Education = () => {
 
             <Divider />
 
-            <List style={{ width: "85%" }}>
+            <List style={{ width: "90%" }}>
                 {educationInfo.map((educationItem, key) => {
                     return <EducationItem key={key} educationItem={educationItem} />;
                 })}
