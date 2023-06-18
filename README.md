@@ -1,1 +1,0 @@
-**Pavlkan's CV**
